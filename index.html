@@ -1,78 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>My Website</title>
-    <style>
-      /* Define the Atom One Dark theme in a local CSS file */
-      /* You can copy the entire Atom One Dark CSS from the link and paste it here */
-      /* I've included only the necessary styles for this example */
-      body {
-        background-color: #282c34;
-        color: #abb2bf;
-      }
-      a {
-        color: #61afef;
-      }
-      h1 {
-        color: #c678dd;
-      }
-      p {
-        color: #dcdfe4;
-      }
-      form {
-        background-color: #3e4451;
-        color: #dcdfe4;
-        padding: 20px;
-        margin-top: 20px;
-      }
-      label {
-        display: block;
-        margin-bottom: 10px;
-        font-weight: bold;
-      }
-      input[type="text"],
-      input[type="email"],
-      button {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        font-size: 16px;
-        border: none;
-        background-color: #abb2bf;
-        color: #282c34;
-      }
-      button {
-        background-color: #61afef;
-        color: #fff;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Home Page -->
-    <div class="home-page">
-      <h1>Welcome to my website</h1>
-      <p>Thanks for visiting my website! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus ligula eu metus accumsan, vel feugiat est placerat.</p>
-      <a href="download.html">Download Now</a>
-    </div>
-
-    <!-- Download Page -->
-    <div class="download-page">
-      <h1>Download Now</h1>
-      <p>Fill out the form below to download my app.</p>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <button type="submit">Download</button>
-      </form>
-    </div>
-
-    <!-- Include Highlight.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <header>
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="download.html">Download</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>This is the home page of my website.</p>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Website. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
