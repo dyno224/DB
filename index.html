@@ -1,88 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Website</title>
-	<style>
-		body {
-			background-color: #000;
-			color: #FFF;
-			font-family: Arial, sans-serif;
-		}
-		header {
-			background-color: #333;
-			color: #FFF;
-			padding: 20px;
-			text-align: center;
-		}
-		h1 {
-			margin: 0;
-			font-size: 36px;
-		}
-		nav {
-			background-color: #111;
-			padding: 10px;
-		}
-		nav ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		nav li {
-			margin: 0 10px;
-		}
-		nav a {
-			color: #FFF;
-			text-decoration: none;
-			font-weight: bold;
-			padding: 5px 10px;
-			border-radius: 5px;
-		}
-		nav a:hover {
-			background-color: #444;
-		}
-		main {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			padding: 20px;
-		}
-		h2 {
-			font-size: 24px;
-			margin: 0 0 20px 0;
-		}
-		.btn {
-			background-color: #FFF;
-			color: #000;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			font-weight: bold;
-		}
-		.btn:hover {
-			background-color: #EEE;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css">
 </head>
 <body>
-	<header>
-		<h1>My Website</h1>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">Download</a></li>
-		</ul>
-	</nav>
-	<main>
-		<h2>Download Page</h2>
-		<p>Click the button below to download our software:</p>
-		<a href="http://example.com/download" class="btn">Download Now</a>
-	</main>
+  <!-- Home Page -->
+  <div class="home-page">
+    <h1>Welcome to my website</h1>
+    <p>Thanks for visiting my website! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus ligula eu metus accumsan, vel feugiat est placerat.</p>
+    <a href="download.html">Download Now</a>
+  </div>
+
+  <!-- Download Page -->
+  <div class="download-page">
+    <h1>Download Now</h1>
+    <p>Fill out the form below to download my app.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <button type="submit">Download</button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
